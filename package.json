@@ -6,8 +6,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "flow": "./node_modules/.bin/flow check --show-all-errors",
-    "flow-coverage":
-      "./node_modules/.bin/flow-coverage-report -f ./node_modules/.bin/flow -i 'app/**/*.js'",
+    "flow-coverage": "./node_modules/.bin/flow-coverage-report -f ./node_modules/.bin/flow -i 'app/**/*.js'",
     "flow-typed-install": "./node_modules/.bin/flow-typed install"
   },
   "dependencies": {
@@ -20,6 +19,12 @@
     "babel-plugin-transform-decorators": "^6.24.1",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "^0.63.1",
     "flow-coverage-report": "^0.4.0",
     "flow-typed": "^2.2.3",
