@@ -1,12 +1,15 @@
 # React Native Boilerplate
 
-The React Native and mobx boilerplate.
+Practical boilerplate of React Native application.
 
 ## Included
 
 We have configured below node modules:
 
 (TODO)
+
+- [ESLint](https://eslint.org/) basically based on [JavaScript Standard Style](https://standardjs.com/)
+- [Prettier](https://prettier.io/)
 
 Other packages are listed in yarn.lock.
 

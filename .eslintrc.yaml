@@ -1,0 +1,48 @@
+---
+parser: babel-eslint
+plugins:
+-   standard
+-   prettier
+-   react
+-   flowtype
+
+extends:
+-   standard
+-   plugin:react/recommended
+-   plugin:flowtype/recommended
+-   prettier
+-   prettier/flowtype
+-   prettier/react
+-   prettier/standard
+
+env:
+    node: true
+    es6: true
+
+parserOptions:
+    sourceType: module
+    ecmaFeatures:
+        jsx: true
+
+globals:
+    require: true
+    "$": true
+    module: true
+    global: true
+    process: true
+
+    # for test
+    it: true
+    xit: true
+    before: true
+    beforeEach: true
+    after: true
+    afterEach: true
+    describe: true
+
+rules:
+    prettier/prettier:
+      - error
+      - trailingComma: none
+        semi: false
+        singleQuote: true
