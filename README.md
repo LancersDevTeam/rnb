@@ -6,10 +6,14 @@ Practical boilerplate of React Native application.
 
 We have configured below node modules:
 
-(TODO)
-
+- [React](https://github.com/facebook/react)
+- [React Native](https://github.com/facebook/react-native)
+- [NativeBase](https://nativebase.io/)
+- [mobx](https://mobx.js.org/)
+- [React Navigation](https://github.com/react-community/react-navigation)
 - [ESLint](https://eslint.org/) basically based on [JavaScript Standard Style](https://standardjs.com/)
 - [Prettier](https://prettier.io/)
+- [flow](https://flow.org/)
 
 Other packages are listed in yarn.lock.
 
