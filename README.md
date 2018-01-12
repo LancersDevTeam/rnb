@@ -12,6 +12,25 @@ Other packages are listed in yarn.lock.
 
 ## Development
 
+### Type check
+
+We do not check type of third party packages. We may encounter `Required module not found` error in code importing third party packages.
+
+```
+$ ./node_modules/.bin/flow check --show-all-errors
+Error: App.js:4
+  4: import { Root, StyleProvider } from 'native-base';
+                                         ^^^^^^^^^^^^^ native-base. Required module not found
+```
+
+Execute the following command to add type definition.
+
+```
+npm run flow-typed-install
+```
+
+If this does not solve the problem, add a dummy type definition to flow/libdefs.js.
+
 ### Commit Message Format
 
 Each commit message consists of some types, a subject.
