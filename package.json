@@ -10,10 +10,8 @@
     "flow-typed-install": "flow-typed install",
     "eslint": "eslint ./src",
     "eslint:fix": "eslint --fix ./src",
-    "prettier":
-      "prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}'",
-    "eslint-check":
-      "eslint --print-config .eslintrc.yaml | eslint-config-prettier-check",
+    "prettier": "prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}'",
+    "eslint-check": "eslint --print-config .eslintrc.yaml | eslint-config-prettier-check",
     "precommit": "lint-staged"
   },
   "lint-staged": {
@@ -23,6 +21,7 @@
     ]
   },
   "dependencies": {
+    "native-base": "^2.3.6",
     "react": "16.2.0",
     "react-native": "0.52.0"
   },
