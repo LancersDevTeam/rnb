@@ -41,8 +41,5 @@ globals:
     describe: true
 
 rules:
-    prettier/prettier:
-      - error
-      - trailingComma: none
-        semi: false
-        singleQuote: true
+    # use .prettier
+    prettier/prettier: error
