@@ -11,6 +11,8 @@
     "flow-typed-install": "./node_modules/.bin/flow-typed install",
     "eslint": "./node_modules/.bin/eslint ./src",
     "eslint:fix": "./node_modules/.bin/eslint --fix ./src",
+    "prettier":
+      "./node_modules/.bin/prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,es6,jsx,scss,css}'",
     "eslint-check":
       "./node_modules/.bin/eslint --print-config .eslintrc.yaml | ./node_modules/.bin/eslint-config-prettier-check",
     "precommit": "lint-staged"
