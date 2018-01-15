@@ -41,5 +41,5 @@ globals:
     describe: true
 
 rules:
-    # use .prettier
+    # use .prettierrc
     prettier/prettier: error
