@@ -7,10 +7,10 @@
     "test": "jest",
     "flow": "./node_modules/.bin/flow check --show-all-errors",
     "flow-coverage":
-      "./node_modules/.bin/flow-coverage-report -f ./node_modules/.bin/flow -i 'app/**/*.js'",
+      "./node_modules/.bin/flow-coverage-report -f ./node_modules/.bin/flow -i 'src/**/*.js'",
     "flow-typed-install": "./node_modules/.bin/flow-typed install",
-    "eslint": "./node_modules/.bin/eslint ./app",
-    "eslint:fix": "./node_modules/.bin/eslint --fix ./app",
+    "eslint": "./node_modules/.bin/eslint ./src",
+    "eslint:fix": "./node_modules/.bin/eslint --fix ./src",
     "eslint-check":
       "./node_modules/.bin/eslint --print-config .eslintrc.yaml | ./node_modules/.bin/eslint-config-prettier-check",
     "precommit": "lint-staged"

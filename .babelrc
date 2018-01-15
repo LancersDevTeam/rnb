@@ -7,7 +7,7 @@
         "root": ["."],
         "extensions": [".js", ".ios.js", ".android.js"],
         "alias": {
-          "app": "./app"
+          "app": "./src"
         },
         "cwd": "babelrc"
       }
