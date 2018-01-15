@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from 'react'
-import { Platform, StyleSheet, Text, View } from 'react-native'
+import { Platform } from 'react-native'
+import { BaseContainer, Text } from 'app/components'
 
 type State = any
 type Props = any
@@ -15,30 +16,9 @@ const instructions = Platform.select({
 export default class ModuleRoot extends Component<Props, State> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+      <BaseContainer>
+        <Text>{instructions}</Text>
+      </BaseContainer>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  }
-})
