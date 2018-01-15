@@ -18,6 +18,8 @@ esproposal.class_static_fields=enable
 esproposal.decorators=ignore
 esproposal.export_star_as=ignore
 suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+; for babel-plugin-module-resolver
+module.name_mapper='^app\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
 
 [version]
 ^0.63.1
