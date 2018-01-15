@@ -5,20 +5,19 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "flow": "./node_modules/.bin/flow check --show-all-errors",
-    "flow-coverage":
-      "./node_modules/.bin/flow-coverage-report -f ./node_modules/.bin/flow -i 'src/**/*.js'",
-    "flow-typed-install": "./node_modules/.bin/flow-typed install",
-    "eslint": "./node_modules/.bin/eslint ./src",
-    "eslint:fix": "./node_modules/.bin/eslint --fix ./src",
+    "flow": "flow check --show-all-errors",
+    "flow-coverage": "flow-coverage-report -f flow -i 'src/**/*.js'",
+    "flow-typed-install": "flow-typed install",
+    "eslint": "eslint ./src",
+    "eslint:fix": "eslint --fix ./src",
     "prettier":
-      "./node_modules/.bin/prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,es6,jsx,scss,css}'",
+      "prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}'",
     "eslint-check":
-      "./node_modules/.bin/eslint --print-config .eslintrc.yaml | ./node_modules/.bin/eslint-config-prettier-check",
+      "eslint --print-config .eslintrc.yaml | eslint-config-prettier-check",
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,json,css,md}": [
+    "{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}": [
       "./node_modules/.bin/prettier --config ./.prettierrc --write",
       "git add"
     ]
