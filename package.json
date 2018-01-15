@@ -16,7 +16,10 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,json,css,md}": ["prettier --write", "git add"]
+    "*.{js,json,css,md}": [
+      "./node_modules/.bin/prettier --config ./.prettierrc --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "react": "16.2.0",
