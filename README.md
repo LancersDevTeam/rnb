@@ -19,6 +19,11 @@ Other packages are listed in yarn.lock.
 
 ## Development
 
+### Basic operation
+
+- ios: Press Cmd+R to reload, Cmd+D or shake for dev menu.
+- android: Double tap R on your keyboard to reload, Shake or press menu button for dev menu.
+
 ### Type check
 
 We do not check type of third party packages. We may encounter `Required module not found` error in code importing third party packages.
