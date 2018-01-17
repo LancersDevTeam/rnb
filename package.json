@@ -10,10 +10,8 @@
     "flow-typed-install": "flow-typed install",
     "eslint": "eslint ./src",
     "eslint:fix": "eslint --fix ./src",
-    "prettier":
-      "prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}'",
-    "eslint-check":
-      "eslint --print-config .eslintrc.yaml | eslint-config-prettier-check",
+    "prettier": "prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}'",
+    "eslint-check": "eslint --print-config .eslintrc.yaml | eslint-config-prettier-check",
     "yarn-update": "yarn-update",
     "precommit": "lint-staged"
   },
@@ -32,7 +30,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
-    "babel-jest": "22.0.6",
+    "babel-jest": "^22.1.0",
     "babel-plugin-module-resolver": "^3.0.0",
     "babel-plugin-transform-decorators": "^6.24.1",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
@@ -43,7 +41,7 @@
     "eslint-plugin-flowtype": "^2.41.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-standard": "^3.0.1",
@@ -52,7 +50,7 @@
     "flow-typed": "^2.2.3",
     "flowtype": "^2.0.0",
     "husky": "^0.14.3",
-    "jest": "22.0.6",
+    "jest": "^22.1.1",
     "lint-staged": "^6.0.0",
     "prettier": "^1.10.2",
     "react-test-renderer": "16.2.0",
