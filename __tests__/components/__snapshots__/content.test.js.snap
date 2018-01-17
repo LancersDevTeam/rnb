@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTScrollView
+  automaticallyAdjustContentInsets={false}
+  contentInset={
+    Object {
+      "bottom": 0,
+    }
+  }
+  enableAutoAutomaticScroll={true}
+  enableResetScrollToCoords={true}
+  extraHeight={75}
+  extraScrollHeight={0}
+  keyboardDismissMode="interactive"
+  keyboardOpeningTime={250}
+  keyboardShouldPersistTaps="handled"
+  onScroll={[Function]}
+  resetScrollToCoords={
+    Object {
+      "x": 0,
+      "y": 0,
+    }
+  }
+  scrollEventThrottle={0}
+  showsVerticalScrollIndicator={true}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "flex": 1,
+    }
+  }
+  virtual={undefined}
+>
+  <View />
+</RCTScrollView>
+`;

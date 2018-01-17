@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": undefined,
+        "fontSize": 12,
+      },
+      Array [
+        Object {
+          "color": "#000",
+          "fontSize": 30,
+        },
+        Object {
+          "color": "#000",
+          "fontSize": 30,
+        },
+      ],
+      Object {
+        "fontFamily": "Ionicons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+  virtual={undefined}
+>
+  
+</Text>
+`;

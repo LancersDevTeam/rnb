@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "height": 1334,
+      },
+      Object {
+        "alignItems": "stretch",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+  virtual={undefined}
+/>
+`;

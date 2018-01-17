@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Image
+  style={
+    Object {
+      "borderRadius": 28,
+      "height": 56,
+      "width": 56,
+    }
+  }
+  virtual={undefined}
+/>
+`;
