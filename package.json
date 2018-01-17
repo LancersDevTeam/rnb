@@ -52,7 +52,8 @@
     "jest": "22.0.6",
     "lint-staged": "^6.0.0",
     "prettier": "^1.10.2",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "yarn-update": "^0.1.0"
   },
   "jest": {
     "preset": "react-native"
