@@ -10,8 +10,11 @@
     "flow-typed-install": "flow-typed install",
     "eslint": "eslint ./src",
     "eslint:fix": "eslint --fix ./src",
-    "prettier": "prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}'",
-    "eslint-check": "eslint --print-config .eslintrc.yaml | eslint-config-prettier-check",
+    "prettier":
+      "prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}'",
+    "eslint-check":
+      "eslint --print-config .eslintrc.yaml | eslint-config-prettier-check",
+    "yarn-update": "yarn-update",
     "precommit": "lint-staged"
   },
   "lint-staged": {
