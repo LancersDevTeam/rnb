@@ -17,6 +17,17 @@
     "yarn-update": "yarn-update",
     "precommit": "lint-staged"
   },
+  "jest": {
+    "preset": "react-native",
+    "testEnvironment": "node",
+    "setupFiles": ["<rootDir>/jest_setup.js"],
+    "globals": {
+      "__DEV__": true
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|native-base-shoutem-theme|react-navigation)"
+    ]
+  },
   "lint-staged": {
     "{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}": [
       "./node_modules/.bin/prettier --config ./.prettierrc --write",
