@@ -17,6 +17,37 @@ We have configured below node modules:
 
 Other packages are listed in yarn.lock.
 
+## Application design
+
+This is the directory layout and its role.
+
+```
+.
+├── App.js
+├── index.js
+├── __tests__
+├── android
+├── ios
+├── app.json
+├── flow
+│   └── libdefs.js // We set this in .flowconfig
+├── flow-typed
+│   └── npm
+├── jest_setup.js // We set this as setupFiles in package.json
+├── node_modules
+│   ├── ...
+│   └── yarn-update // for `yarn yarn-update`
+├── package.json
+├── src
+│   ├── routes.js // setting of `react-navigation`
+│   ├── components // Wrapper ob `native-base`. We assume that styles are added here. ex: Atomic design's atoms and molecules
+│   ├── modules
+│   │   ├── ...
+│   │   └── module_root.js // entry point
+│   └── stores // mobx-based models. We assume this article. https://mobx.js.org/best/store.html#combining-multiple-stores
+└── yarn.lock
+```
+
 ## Development
 
 ### Basic operation
