@@ -2,6 +2,25 @@
 
 Practical boilerplate of React Native application.
 
+## How to start your project
+
+1. Clone [rnb](https://github.com/LancersDevTeam/rnb) and rename app.
+
+```
+git clone git@github.com:LancersDevTeam/rnb.git
+npm install --global yarn
+yarn install
+yarn react-native-rename your_app_name
+yarn remove react-native-rename
+```
+
+2. Edit README.md and LICENSE.
+3. Add your repository
+
+```
+git remote add origin git/path/to/your/repository
+```
+
 ## Included
 
 We have configured below node modules:
@@ -40,7 +59,7 @@ This is the directory layout and its role.
 ├── package.json
 ├── src
 │   ├── routes.js // setting of `react-navigation`
-│   ├── components // Wrapper ob `native-base`. We assume that styles are added here. ex: Atomic design's atoms and molecules
+│   ├── components // Wrapper of `native-base`. We assume that styles are added here. ex: Atomic design's atoms and molecules
 │   ├── modules
 │   │   ├── ...
 │   │   └── module_root.js // entry point
