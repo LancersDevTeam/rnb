@@ -67,6 +67,7 @@
     "jest": "^22.1.1",
     "lint-staged": "^6.0.0",
     "prettier": "^1.10.2",
+    "react-native-rename": "^2.2.2",
     "react-test-renderer": "16.2.0",
     "yarn-update": "^0.1.0"
   }
