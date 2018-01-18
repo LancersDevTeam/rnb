@@ -10,17 +10,17 @@
     "flow-typed-install": "flow-typed install",
     "eslint": "eslint ./src",
     "eslint:fix": "eslint --fix ./src",
-    "prettier":
-      "prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}'",
-    "eslint-check":
-      "eslint --print-config .eslintrc.yaml | eslint-config-prettier-check",
+    "prettier": "prettier --config ./.prettierrc --write '{src,__{tests,mocks}__}/**/*.{js,json,jsx,css}'",
+    "eslint-check": "eslint --print-config .eslintrc.yaml | eslint-config-prettier-check",
     "yarn-update": "yarn-update",
     "precommit": "lint-staged"
   },
   "jest": {
     "preset": "react-native",
     "testEnvironment": "node",
-    "setupFiles": ["<rootDir>/jest_setup.js"],
+    "setupFiles": [
+      "<rootDir>/jest_setup.js"
+    ],
     "globals": {
       "__DEV__": true
     },
@@ -35,6 +35,8 @@
     ]
   },
   "dependencies": {
+    "mobx": "^3.4.1",
+    "mobx-react": "^4.3.5",
     "native-base": "^2.3.6",
     "react": "16.2.0",
     "react-native": "0.52.0",
