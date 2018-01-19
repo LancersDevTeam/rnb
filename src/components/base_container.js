@@ -1,23 +1,19 @@
 // @flow
-import React from 'react'
+import React, { Component } from 'react'
 import { StatusBar } from 'react-native'
-import { Container } from 'app/components'
+import { Container as NBContainer } from 'native-base'
 import styles from './base_container_style'
 
-type Props = {
-  barColor: string,
-  children?: ?React$Element<any>
-}
+type State = any
+type Props = any
 
-export const BaseContainer = ({ barColor, children }: Props) => (
-  <Container style={styles.container}>
-    <StatusBar
-      barStyle={barColor === 'light' ? 'light-content' : 'dark-content'}
-    />
-    {children}
-  </Container>
-)
-
-BaseContainer.defaultProps = {
-  children: null
+export class BaseContainer extends Component<Props, State> {
+  render() {
+    return (
+      <NBContainer {...this.props} style={styles.container}>
+        <StatusBar />
+        {this.props.children}
+      </NBContainer>
+    )
+  }
 }
