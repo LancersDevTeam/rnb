@@ -13,7 +13,7 @@ const instructions = Platform.select({
 type State = any
 type Props = any
 
-export class TopScreen extends Component<Props, State> {
+export class HomeScreen extends Component<Props, State> {
   render() {
     return (
       <BaseContainer>

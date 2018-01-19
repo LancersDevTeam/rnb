@@ -1,15 +1,15 @@
 import { StackNavigator } from 'react-navigation'
-import { TopScreen } from 'app/modules/top'
+import { HomeScreen } from 'app/modules/home'
 
 const AppNavigatorRouteConfigs = {
-  Top: {
-    screen: TopScreen
+  Home: {
+    screen: HomeScreen
   }
 }
 
 const AppNavigatorConfigs = {
   headerMode: 'screen',
-  initialRouteName: 'Top'
+  initialRouteName: 'Home'
 }
 
 export const AppNavigator = StackNavigator(
