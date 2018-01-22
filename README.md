@@ -18,7 +18,7 @@ yarn remove react-native-rename
 3. Add your repository
 
 ```
-git remote add origin git/path/to/your/repository
+git remote set-url origin git/path/to/your/repository
 ```
 
 ## Included
