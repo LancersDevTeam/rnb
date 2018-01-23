@@ -10,8 +10,9 @@ Practical boilerplate of React Native application.
 git clone git@github.com:LancersDevTeam/rnb.git
 npm install --global yarn
 yarn install
-yarn react-native-rename your_app_name
+npx react-native-rename your_app_name
 yarn remove react-native-rename
+npx yarn-update
 ```
 
 2. Edit README.md and LICENSE.
